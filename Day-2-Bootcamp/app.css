@@ -192,31 +192,33 @@ nav a {
     height: 90vh;
     width: 95%;
     display: flex;
-
+    flex-direction: column;
+    justify-content: center;
     font-family: "Bebas Neue", sans-serif;
 
 }
 
-.hero h1 {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-
-
+.hero-button {
+    max-width: 10%;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 12px 24px;
+    color: white;
+    border: solid black 2px;
+    background: black;
+    transition-property: color, background;
+    transition-duration: .15s;
+    transition-timing-function: ease-out;
+    border-radius: 3px;
+    cursor: pointer;
 }
 
-.hero p {
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
+h1 {
+    font-size: 5em;
+    text-align: center;
+    padding-bottom: 3em;
+
 }
-
-h1,
-p {
-    font-size: 3em;
-}
-
-
 
 .panel {
     background-color: white;
@@ -308,6 +310,12 @@ a:hover {
     transform: translateY(-2px);
 
 }
+
+.hero-button:hover {
+    color: black;
+    background: transparent;
+}
+
 
 @media (min-width: 900px) {
     .panel {
